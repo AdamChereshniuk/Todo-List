@@ -18,7 +18,7 @@ function App() {
 
   const openLoginModal = () => setIsLoginModalOpen(true);
   const closeLoginModal = () => setIsLoginModalOpen(false);
-  const signOut = async() => await nhostClient.auth.signOut({}).then(() => window.location.href = "/").catch(err => console.log(err));
+  const signOut = async() => await nhostClient.auth.signOut({}).then(() => window.location.href = "/Todo-List/").catch(err => console.log(err));
 
   return (
     <>

@@ -49,7 +49,7 @@ export const NotesPage = () => {
                                         {notes.filter(note => note.user_id === currentUser.id).map(note => {
                                             return (
                                                 <li className="notes-page__main-item">
-                                                    <Link to={`/note/${note.id}`}>
+                                                    <Link to={`/Todo-List/note/${note.id}`}>
                                                         <span className="notes-page__main-item-title">{note.title}</span>
                                                         <span className="notes-page__main-item-created-at">Создано {new Date(note.created_at).toLocaleDateString()}</span>
                                                     </Link>

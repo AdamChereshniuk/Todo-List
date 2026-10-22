@@ -13,7 +13,7 @@ export const MainPage = ({ isUserAuthorized, onClickLoginBtn }: { isUserAuthoriz
                                 <p className="main-page__text">ToDo List - сервис для планирования задач с личным кабинетом.</p>
                                 <p className="main-page__text">Нажмите на кнопку, чтобы перейти к заметкам.</p>
                             </div>
-                            <Link className="main-page__btn btn" to="/notes">Перейти к заметкам</Link>
+                            <Link className="main-page__btn btn" to="/Todo-List/notes">Перейти к заметкам</Link>
                         </>
                     ) : (
                         <>

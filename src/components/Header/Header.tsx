@@ -7,7 +7,7 @@ export const Header = ({ isUserAuthorized, onClickLoginBtn, onClickSignOutBtn }:
         <header className="header">
             <div className="container">
                 <div className="header__inner">
-                    <Link className="header__logo" to="/">
+                    <Link className="header__logo" to="/Todo-List/">
                         <img src={logo} alt="Лого" />
                     </Link>
                     {isUserAuthorized ? (

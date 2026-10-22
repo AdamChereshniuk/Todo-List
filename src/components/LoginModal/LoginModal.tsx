@@ -74,7 +74,7 @@ export const LoginModal = ({ isLoginModalOpen, closeLoginModal }: { isLoginModal
 
                                 if (result.success) {
                                     if (result.session) {
-                                        navigate("/");
+                                        navigate("/Todo-List/");
                                     } else {
                                         setIsRegisterSuccess(true);
                                     };
@@ -104,7 +104,7 @@ export const LoginModal = ({ isLoginModalOpen, closeLoginModal }: { isLoginModal
                                 const result = await loginUser({ email, password });
 
                                 if (result.success && result.session) {
-                                    window.location.href = "/";
+                                    window.location.href = "/Todo-List/";
                                 } else {
                                     setError("Произошла ошибка. Попробуйте снова.");
                                 };

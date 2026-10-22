@@ -42,7 +42,7 @@ export const CreateNoteModal = ({ isCreateNoteModalOpen, closeCreateNoteModal }:
                 <h1 className="create-note-modal__title title">Создать заметку</h1>
                 <form className="create-note-modal__form" onSubmit={handleSubmit(({ title }) => {
                     currentUser.then(user => {
-                        createNoteWithUserId(title, [], user.body.id || "0").then(() => window.location.href = "/notes");
+                        createNoteWithUserId(title, [], user.body.id || "0").then(() => window.location.href = "/Todo-List/notes");
                     });
                 })}>
                     <input className="create-note-modal__input input" type="text" placeholder="Название" {...register("title", {
