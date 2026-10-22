@@ -27,9 +27,9 @@ function App() {
           <>
             <Header isUserAuthorized={isUserAuthentificated} onClickLoginBtn={openLoginModal} onClickSignOutBtn={signOut} />
             <Routes>
-              <Route index path="/" element={<MainPage isUserAuthorized={isUserAuthentificated} onClickLoginBtn={openLoginModal} />} />
-              {isUserAuthentificated && <Route index path="/notes" element={<NotesPage />} />}
-              {isUserAuthentificated && <Route index path="/note/:id" element={<NotePage />} />}
+              <Route index path="/Todo-List/" element={<MainPage isUserAuthorized={isUserAuthentificated} onClickLoginBtn={openLoginModal} />} />
+              {isUserAuthentificated && <Route index path="/Todo-List/notes" element={<NotesPage />} />}
+              {isUserAuthentificated && <Route index path="/Todo-List/note/:id" element={<NotePage />} />}
             </Routes>
           </>
         </NhostProvider>
