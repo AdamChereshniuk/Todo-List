@@ -1,0 +1,14 @@
+.create-note-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+.create-note-modal__form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
